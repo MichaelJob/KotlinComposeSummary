@@ -31,3 +31,20 @@ fun uploadFTP(
         .addFileToUpload(localfilepath, "/$filename")
         .startUpload()
 }
+
+/*
+Note:
+
+Password should not contain certain special characters like @ or $.
+These characters may cause browser conflicts when used for inline URL access.
+Make sure to test via cURL https://everything.curl.dev/ftp
+
+If certain special characters are used, you have to encode the password:
+
+"For example, the password for FTP account USER on some_ftp_server.com is P@$$WORD - so the URL for browser access is:
+ftp://USER:P@$$WORD@some_ftp_server.com
+Special characters (@, $) in this URL have to be hex encoded to operate without any conflicts. And the hex conversion will look as following:
+ftp://USER:P%40%24%24WORD@some_ftp_server.com
+where %40 is the hex value (0x40) of '@' character and %24 is the hex value (0x24) of '$' character."
+(c) https://www3.trustwave.com/support/kb/article.aspx?id=14938
+*/
