@@ -1,13 +1,14 @@
 /*
  *  Simple Layout elements are rows and columns to organize the position of elements in the GUI.
- *  Composables can get tweaked by specifiing their modifier, default values do exist.
+ *  Composables can get tweaked by specifying their modifier, default values do exist.
  *  Inside of it other composables are set: content = { ... }
  */
 
 
 
-//Example of a column with three elements inside, spaced by 10.dp - the last one is a row, containing two elements itself.
-
+// Example of a column with three elements inside, spaced by 10.dp
+// the last one is a row, containing two elements itself.
+@Composable
 Column(
     // no modifier is specified here, it uses its default values
     verticalArrangement = Arrangement.spacedBy(10.dp),
@@ -37,8 +38,9 @@ Column(
 
 
 
-//Example of a Row with two buttons inside, SpaceBetween places the first on the left and the second all to the right end of the row.
-
+// Example of a Row with two buttons inside,
+// SpaceBetween places the first on the left and the second all to the right end of the row.
+@Composable
 Row(
     modifier = Modifier.fillMaxWidth().padding(12.dp),
     verticalAlignment = Alignment.CenterVertically,

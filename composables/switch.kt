@@ -5,7 +5,7 @@ import androidx.compose.runtime.remember
 val checkedState = remember { mutableStateOf(true) }
 
 //minimal use example
-
+@Composable
 Switch(
     checked = checkedState.value,
     onCheckedChange = { checkedState.value = it }
