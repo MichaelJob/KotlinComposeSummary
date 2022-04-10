@@ -18,3 +18,14 @@ fun MultipleScreensUI(model: YourMultipleScreensModel) {
             }
     }
 }
+
+
+
+// if Enum Screens contains a value "content" which is the composable function to get the screen, you can also do:
+Crossfade(targetState = model.currentScreen ) { screen -> screen.content.invoke() }
+//Enum Screen would look like this:
+enum class Screen(val content: @Composable () -> Unit) {
+    HOME  ( { HomeScreen() }   ),
+    ABOUT ( { AboutScreen() }  ),
+    DETAIL( { DetailScreen() } ),
+}
