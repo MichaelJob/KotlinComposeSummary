@@ -1,0 +1,27 @@
+There are two options to tell your app what to do if the soft keyboard shows up.
+Either the layout stays as it is or the available size gets reduced and your apps
+layout will adjust accordingly. Depending on the use case you have to decide which
+option is needed for your current project.
+
+In the Android Manifest you can define the following line:
+
+android:windowSoftInputMode="stateVisible"
+
+android:windowSoftInputMode="adjustResize"
+
+to accomplish these behaviors.
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+   ...
+   <application
+    ...
+        <activity
+           ...
+           android:windowSoftInputMode="stateVisible"
+           ...
+        </activity>
+   </application>
+</manifest>
