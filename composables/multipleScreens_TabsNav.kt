@@ -1,4 +1,4 @@
-// to create a tab nav
+// Tabs Navigation
 
 // in your model have the currently selected tab
 var selectedTab by mutableStateOf(AvailableTab.FIRST)
@@ -9,6 +9,7 @@ enum class AvailableTab(val title: String, val message: String) {
     THIRD("Right", "dolor")
 }
 
+// show tabs at the top of your Composable if placed first inside a column like so:
 @Composable
 private fun Body(model: TabsModel) {
     with(model) {
@@ -23,6 +24,13 @@ private fun Body(model: TabsModel) {
             }
             //content of column is always the same composables as stated here, but..
             MessageBox(text = selectedTab.message) // content of text is depending on selectedTab
+            //for different composables depending on clicked tab, do:
+            when (selectedTab) {
+                AvailableTab.HOME      -> { HomeScreen(model) }
+                AvailableTab.PROFILE   -> { ProfileScreen(model) }
+                AvailableTab.LIST      -> { ListScreen(model) }
+                AvailableTab.ABOUT     -> { AboutScreen(model) }
+            }
         }
     }
 }
@@ -33,6 +41,7 @@ private fun Body(model: TabsModel) {
 //******** alternative Tab Nav with Buttons, no TabRow **********//
 // if you want to have a tab nav but also be able to show "other" screens, but hide its nav bar/button
 // use same for model and enum - extend enum with boolean to show/hide nav
+// or use a Scaffold or Crossfade for your Screens and a TabNav for your Tabs
 enum class Screen(val navName: String, val hideNav: Boolean, val icon: ImageVector) {
     //visible Tabs in Navigation
     LEFT         ("Left", false, Icons.Filled.List),
