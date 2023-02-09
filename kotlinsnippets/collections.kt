@@ -1,3 +1,26 @@
+//basic collections are immutable
+val listA: List<Int> = listOf(1, 2, 3)
+val setB: Set<Int> = setOf(3, 3, 4, 5) //contains 3, 4, 5
+val mapC: Map<String, Int> = mapOf(
+        "gold" to 1,
+        "silver" to 2,
+        "bronze" to 3
+)
+//mutable collections
+val listD: List<Int> = mutableListOf(1, 2, 3)
+val setE: Set<Int> = mutableSetOf(3, 3, 4, 5) //contains 3, 4, 5
+val mapF: Map<String, Int> = mutableMapOf(
+        "gold" to 1,
+        "silver" to 2,
+        "bronze" to 3
+)
+// iteration over lists
+for(elem in list) {
+   println(elem)
+}
+
+// use provided fun on collections instead of regular for loops:
+
 // extracted from Kotlin Koans - credits for https://kotlinlang.org/docs/koans.html
 
 // Return a list of customers, sorted in the descending by number of orders they have made

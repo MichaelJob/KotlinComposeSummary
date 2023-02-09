@@ -1,3 +1,4 @@
 # KotlinComposeSummary
 Notes & Examples for  
-Android with Kotlin & Jetpack Compose
+Kotlin & Jetpack Compose  
+for Android

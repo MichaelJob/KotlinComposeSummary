@@ -32,6 +32,7 @@ fun AppUI(model: YourAppModel) {
 }
 
 // if a Drawer is provided remember the scaffoldState - here the main content is also inlined
+// Material 2
 
 @Composable
 fun AppUI(model: YourAppModel) {
@@ -64,5 +65,40 @@ fun AppUI(model: YourAppModel) {
                 }
             }
         )
+    }
+}
+
+/* Material 3
+ * makes use of ModalNavigationDrawer for Drawer Layouts.
+ * Inside the main content there can still be a Scaffold, but the Scaffold itself has lost its own Drawer functionality!
+ */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun MaterialUI(model: MaterialModel) {
+    val drawerState = rememberDrawerState(DrawerValue.Closed)
+    with(model) {
+        MaterialAppTheme(
+            darkTheme,
+            typoBig
+        ) {
+            ModalNavigationDrawer(
+                drawerState = drawerState,
+                drawerContent = {
+                    ModalDrawerSheet(
+                        content = { YourDrawerComposable(model) }
+                    )
+                },
+                content = {
+                    Scaffold(
+                        topBar = { YourBar(model, drawerState) },
+                        floatingActionButton = { YourFAB(model) },
+                        floatingActionButtonPosition = FabPosition.End,
+                        content = {
+                            YourBody(model, it)
+                        }
+                    )
+                }
+            )
+        }
     }
 }
