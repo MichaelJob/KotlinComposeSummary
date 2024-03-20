@@ -1,4 +1,3 @@
-import ch.michaeljob.kotlincomposenotes.kotlinsnippets.Product
 
 //basic collections are immutable
 val listA: List<Int> = listOf(1, 2, 3)

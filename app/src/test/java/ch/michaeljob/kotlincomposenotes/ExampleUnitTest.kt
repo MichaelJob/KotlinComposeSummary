@@ -1,4 +1,4 @@
-package ch.michaeljob.kotlincomposenotes
+package ch.michaeljob.kotlincomposesummary
 
 import org.junit.Test
 

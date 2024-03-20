@@ -13,7 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import ch.michaeljob.kotlincomposenotes.kotlinsnippets.AppViewModel.booleanValue
+import ch.michaeljob.kotlincomposesummary.kotlinsnippets.AppViewModel.booleanValue
 
 /*
  *  Simple Layout elements are rows and columns to organize the position of elements in the GUI.

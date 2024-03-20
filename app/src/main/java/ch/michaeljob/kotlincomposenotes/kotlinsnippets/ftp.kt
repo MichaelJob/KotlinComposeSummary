@@ -1,4 +1,4 @@
-package ch.michaeljob.kotlincomposenotes.kotlinsnippets
+package ch.michaeljob.kotlincomposesummary.kotlinsnippets
 /*
 Android - FTP upload
 with https://mvnrepository.com/artifact/it.sauronsoftware/ftp4j

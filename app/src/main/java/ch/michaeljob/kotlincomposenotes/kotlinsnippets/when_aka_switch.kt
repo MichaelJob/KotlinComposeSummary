@@ -21,7 +21,7 @@ fun mySwitchCases(){
         else -> {} //necessary else branch if undefined all cases covered
     }
 
-    val numericValue = when (Bit.ONE) {
+    val numericValue = when (getRandomBit()) {
         Bit.ZERO -> 0
         Bit.ONE -> 1
         // 'else' is not required because all cases are covered
@@ -30,4 +30,8 @@ fun mySwitchCases(){
 
 enum class Bit {
     ZERO, ONE
+}
+
+fun getRandomBit() : Bit{
+    return Bit.entries.random()
 }

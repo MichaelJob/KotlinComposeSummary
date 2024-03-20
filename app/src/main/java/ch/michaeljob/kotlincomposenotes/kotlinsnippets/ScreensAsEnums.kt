@@ -1,4 +1,4 @@
-package ch.michaeljob.kotlincomposenotes.kotlinsnippets
+package ch.michaeljob.kotlincomposesummary.kotlinsnippets
 
 enum class ScreensAsEnums {
     HOME,

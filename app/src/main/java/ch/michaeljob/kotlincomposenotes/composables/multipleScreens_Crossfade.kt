@@ -1,7 +1,7 @@
 import androidx.compose.animation.Crossfade
 import androidx.compose.animation.core.tween
 import androidx.compose.runtime.Composable
-import ch.michaeljob.kotlincomposenotes.kotlinsnippets.AppViewModel
+import ch.michaeljob.kotlincomposesummary.kotlinsnippets.AppViewModel
 
 // multiple screens
 // with Crossfade to animate transition; with Enums for multiple Screens with a camposable fun as attribute

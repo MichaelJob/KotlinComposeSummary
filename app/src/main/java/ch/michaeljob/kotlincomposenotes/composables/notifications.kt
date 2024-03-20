@@ -14,7 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import ch.michaeljob.kotlincomposenotes.kotlinsnippets.AppViewModel
+import ch.michaeljob.kotlincomposesummary.kotlinsnippets.AppViewModel
 
 // to show notifications like dialogs inside the app
 // use a snackbar with a modelVariable for example like so:
