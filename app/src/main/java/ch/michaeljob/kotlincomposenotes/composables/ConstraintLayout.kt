@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 
-import ch.michaeljob.kotlincomposenotes.kotlinsnippets.AppViewModel
+import ch.michaeljob.kotlincomposesummary.kotlinsnippets.AppViewModel
 
 val model = AppViewModel
 

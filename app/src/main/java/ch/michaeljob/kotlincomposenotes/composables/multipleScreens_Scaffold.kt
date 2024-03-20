@@ -3,8 +3,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import ch.michaeljob.kotlincomposenotes.kotlinsnippets.AppViewModel
-import ch.michaeljob.kotlincomposenotes.kotlinsnippets.ScreensAsEnums
+import ch.michaeljob.kotlincomposesummary.kotlinsnippets.AppViewModel
+import ch.michaeljob.kotlincomposesummary.kotlinsnippets.ScreensAsEnums
 
 // Multiple Screens
 @Composable

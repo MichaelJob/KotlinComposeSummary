@@ -9,8 +9,8 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import ch.michaeljob.kotlincomposenotes.kotlinsnippets.AppViewModel
-import ch.michaeljob.kotlincomposenotes.kotlinsnippets.ScreensAsEnums
+import ch.michaeljob.kotlincomposesummary.kotlinsnippets.AppViewModel
+import ch.michaeljob.kotlincomposesummary.kotlinsnippets.ScreensAsEnums
 
 /* Drawer Layout
  *

@@ -1,6 +1,6 @@
 import androidx.compose.material3.Switch
 import androidx.compose.runtime.Composable
-import ch.michaeljob.kotlincomposenotes.kotlinsnippets.AppViewModel.booleanValue
+import ch.michaeljob.kotlincomposesummary.kotlinsnippets.AppViewModel.booleanValue
 
 
 //minimal use example

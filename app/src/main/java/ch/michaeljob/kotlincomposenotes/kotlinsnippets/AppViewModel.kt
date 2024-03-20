@@ -1,4 +1,4 @@
-package ch.michaeljob.kotlincomposenotes.kotlinsnippets
+package ch.michaeljob.kotlincomposesummary.kotlinsnippets
 
 import android.graphics.Bitmap
 import androidx.compose.runtime.getValue

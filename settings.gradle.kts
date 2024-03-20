@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "KotlinComposeNotes"
+rootProject.name = "KotlinComposeSummary"
 include(":app")

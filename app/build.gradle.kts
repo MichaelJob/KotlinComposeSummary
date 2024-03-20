@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "ch.michaeljob.kotlincomposenotes"
+    namespace = "ch.michaeljob.kotlincomposesummary"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ch.michaeljob.kotlincomposenotes"
+        applicationId = "ch.michaeljob.kotlincomposesummary"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
